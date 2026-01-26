@@ -1,4 +1,4 @@
-from games import number_guesser, tic_tac_toe
+from games import number_guesser
 
 #ttt = tic_tac_toe.TicTacToe()
 ng = number_guesser.NumberGuesser()
