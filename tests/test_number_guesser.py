@@ -1,8 +1,6 @@
 import unittest
 from games.number_guesser import engine
 
-print(engine.__file__)
-
 class TestNumberGuesser(unittest.TestCase):
     def setUp(self):
         self.game = engine.Engine()

@@ -1,6 +1,5 @@
-from games import number_guesser
+from games.number_guesser import ui as number_guesser
 
 #ttt = tic_tac_toe.TicTacToe()
-ng = number_guesser.NumberGuesser()
+number_guesser.run_game()
 
-ng.game()

@@ -14,6 +14,9 @@ class Engine():
         self.number = random.randrange(1, self.max_number)
         self.guessArr = []
 
+    def get_max_number(self):
+        return self.max_number
+
     def get_guesses_left(self):
         return self.max_guesses - len(self.guessArr)
 
@@ -40,9 +43,11 @@ class Engine():
         if self.number == guess:
             return CORRECT
 
+        # if the first guess is incorrect
         if guess_count == 0:
             return INCORRECT
 
+        # if user has run out of guesses
         if self.get_guesses_left() == 0:
             return OVER
 
