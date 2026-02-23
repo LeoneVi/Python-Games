@@ -33,6 +33,7 @@ while True:
             hangman.run_game()
         case _:
             print(MSG_WRONG_SELECTION)
+            continue
 
     print(MSG_WELCOME_BACK)
     print(MSG_GAMES)

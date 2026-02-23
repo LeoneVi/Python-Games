@@ -3,4 +3,4 @@ __pycache__/
 *.pyc
 .env
 .venv
-_trail_temp
+_trail_temp/
