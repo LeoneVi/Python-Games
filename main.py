@@ -6,6 +6,7 @@ MSG_WELCOME = "Thanks for playing Tory's games in python! Select which game you 
 MSG_NOT_INT = "Please input a number to select which game you would like to play!"
 MSG_WRONG_SELECTION = "Not an available game. Please select a number for which game you would like to play!"
 MSG_QUIT = "Quitting starting menu..."
+MSG_WELCOME_BACK = "Welcome back to the start menu! Select which game you would like to play. ☺"
 
 MSG_GAMES = """
             [1] Number Guessing Game
@@ -13,6 +14,7 @@ MSG_GAMES = """
             """
 
 print(MSG_WELCOME)
+print(MSG_GAMES)
 while True:
     x = input("> ").lower().strip()
 
@@ -31,3 +33,6 @@ while True:
             hangman.run_game()
         case _:
             print(MSG_WRONG_SELECTION)
+
+    print(MSG_WELCOME_BACK)
+    print(MSG_GAMES)

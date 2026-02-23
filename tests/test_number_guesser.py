@@ -36,6 +36,3 @@ class TestNumberGuesser(unittest.TestCase):
     def test_repeat(self):
         self.game.make_guess(self.game.number - 5)
         self.assertEqual(self.game.make_guess(self.game.number - 5), "repeat")
-
-    if __name__ == '__main__':
-        unittest.main()
